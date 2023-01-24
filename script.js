@@ -32,7 +32,7 @@ class Calculator {
     }
 
     compute() {
-
+      
     }
 
     updateDisplay() {
@@ -63,4 +63,9 @@ operationButtons.forEach(button => {
         calculator.chooseOperation(button.innerText)
         calculator.updateDisplay()
     })
+})
+
+equalsButton.addEventListener('click', button => {
+    calculator.compute()
+    calculator.updateDisplay()
 })
